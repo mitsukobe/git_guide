@@ -1,0 +1,10 @@
+Step one: Set configuration options
+- git config -- list : summarizes configuration options
+- user.name
+- user.email
+- core.editor 
+
+user.email=dimitra.bernidaki@ln2db.com
+user.name=dimitra bernidaki
+core.editor='C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession
+

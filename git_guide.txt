@@ -54,4 +54,6 @@ the removal with the -f option. This is a safety feature to prevent accidental r
 of data that hasn’t yet been recorded in a snapshot and that can’t be recovered from 
 Git.
 
+Step optional:
+- git mv file_from file_to
 

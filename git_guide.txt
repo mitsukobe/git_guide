@@ -24,3 +24,14 @@ git add, you have to run git add again to stage the latest version of the file.
 
 Step optional: git ignore
 - https://github.com/github/gitignore
+
+Step four: comparing
+- git diff: That command compares what is in your working directory with what is in 
+your staging area. The result tells you the changes you’ve made that you haven’t yet 
+staged.
+
+- git diff --staged: If you want to see what you’ve staged that will go into your next 
+commit.
+
+- git difftool: it uses vim and grafical file comparison
+

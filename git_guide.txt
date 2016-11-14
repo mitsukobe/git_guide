@@ -127,3 +127,6 @@ the same as always, but it overwrites your previous commit.
 - git checkout -- <file>: revert it back to what it looked like when you last committed,
 is a dangerous command. Any changes you made to that file are gone – Git just copied 
 another file over it. Don’t ever use this command unless you absolutely know that you don’t want the file.
+
+Step nine: remotes
+https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes to be revisited

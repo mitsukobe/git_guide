@@ -8,3 +8,6 @@ user.email=dimitra.bernidaki@ln2db.com
 user.name=dimitra bernidaki
 core.editor='C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession
 
+Step two: initialize repository
+- cd ...\mygitrepository_whateva
+- git init

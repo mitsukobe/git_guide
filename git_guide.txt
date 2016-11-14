@@ -35,3 +35,15 @@ commit.
 
 - git difftool: it uses vim and grafical file comparison
 
+Step five: commit
+- git commit: opens the default editor for the message of the commit
+- git commit -m '' : the message can be written in the ''
+- git commit -a: Adding the -a option to the git commit command makes Git automatically 
+stage every file that is already tracked before doing the commit, letting you skip the 
+git add part.
+
+Now you’ve created your first commit! You can see that the commit has given you some 
+output about itself: which branch you committed to (master), what SHA-1 checksum the
+commit has (463dc4f), how many files were changed, and statistics about lines added 
+and removed in the commit.
+

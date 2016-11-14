@@ -113,3 +113,17 @@ Only show commits with a commit message containing the string
 
 -S
 Only show commits adding or removing code matching the string
+
+Step eight: undo changes
+- git reset HEAD <file>...: unstage files.
+
+- git commit --amend: This command takes your staging area and uses it for the commit.
+If you’ve made no changes since your last commit (for instance, you run this command 
+immediately after your previous commit), then your snapshot will look exactly the same,
+and all you’ll change is your commit message. The same commit-message editor fires up,
+but it already contains the message of your previous commit. You can edit the message
+the same as always, but it overwrites your previous commit.
+
+- git checkout -- <file>: revert it back to what it looked like when you last committed,
+is a dangerous command. Any changes you made to that file are gone – Git just copied 
+another file over it. Don’t ever use this command unless you absolutely know that you don’t want the file.

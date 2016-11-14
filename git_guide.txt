@@ -130,3 +130,8 @@ another file over it. Don’t ever use this command unless you absolutely know tha
 
 Step nine: remotes
 https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes to be revisited
+
+Step optional: tags
+- git tag -a v1.4 -m "my version 1.4"
+- git show v1.4
+- git tag -a v1.2 9fceb02: tag a specific commit later in time

@@ -47,10 +47,11 @@ output about itself: which branch you committed to (master), what SHA-1 checksum
 commit has (463dc4f), how many files were changed, and statistics about lines added 
 and removed in the commit.
 
-Step six: removed
+Step six: remove
 - git rm
 - git rm -f : If you modified the file and added it to the index already, you must force
 the removal with the -f option. This is a safety feature to prevent accidental removal
 of data that hasn’t yet been recorded in a snapshot and that can’t be recovered from 
 Git.
+
 

@@ -27,10 +27,10 @@ Step optional: git ignore
 
 Step four: comparing
 - git diff: That command compares what is in your working directory with what is in 
-your staging area. The result tells you the changes youíve made that you havenít yet 
+your staging area. The result tells you the changes you‚Äôve made that you haven‚Äôt yet 
 staged.
 
-- git diff --staged: If you want to see what youíve staged that will go into your next 
+- git diff --staged: If you want to see what you‚Äôve staged that will go into your next 
 commit.
 
 - git difftool: it uses vim and grafical file comparison
@@ -42,7 +42,7 @@ Step five: commit
 stage every file that is already tracked before doing the commit, letting you skip the 
 git add part.
 
-Now youíve created your first commit! You can see that the commit has given you some 
+Now you‚Äôve created your first commit! You can see that the commit has given you some 
 output about itself: which branch you committed to (master), what SHA-1 checksum the
 commit has (463dc4f), how many files were changed, and statistics about lines added 
 and removed in the commit.
@@ -51,7 +51,7 @@ Step six: remove
 - git rm
 - git rm -f : If you modified the file and added it to the index already, you must force
 the removal with the -f option. This is a safety feature to prevent accidental removal
-of data that hasnít yet been recorded in a snapshot and that canít be recovered from 
+of data that hasn‚Äôt yet been recorded in a snapshot and that can‚Äôt be recovered from 
 Git.
 
 Step optional:
@@ -83,7 +83,7 @@ Show the list of files affected with added/modified/deleted information as well.
 Show only the first few characters of the SHA-1 checksum instead of all 40.
 
 --relative-date
-Display the date in a relative format (for example, ì2 weeks agoî) instead of using 
+Display the date in a relative format (for example, ‚Äú2 weeks ago‚Äù) instead of using 
 the full date format.
 
 --graph
@@ -116,22 +116,40 @@ Only show commits adding or removing code matching the string
 
 Step eight: undo changes
 - git reset HEAD <file>...: unstage files.
+- git reset --hard HEAD^ : completeley dumps the changes
+- git reset --soft HEAD^ : keeps the files changed
+
+
 
 - git commit --amend: This command takes your staging area and uses it for the commit.
-If youíve made no changes since your last commit (for instance, you run this command 
+If you‚Äôve made no changes since your last commit (for instance, you run this command 
 immediately after your previous commit), then your snapshot will look exactly the same,
-and all youíll change is your commit message. The same commit-message editor fires up,
+and all you‚Äôll change is your commit message. The same commit-message editor fires up,
 but it already contains the message of your previous commit. You can edit the message
 the same as always, but it overwrites your previous commit.
 
 - git checkout -- <file>: revert it back to what it looked like when you last committed,
-is a dangerous command. Any changes you made to that file are gone ñ Git just copied 
-another file over it. Donít ever use this command unless you absolutely know that you donít want the file.
+is a dangerous command. Any changes you made to that file are gone ‚Äì Git just copied 
+another file over it. Don‚Äôt ever use this command unless you absolutely know that you don‚Äôt want the file.
 
 Step nine: remotes
 https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes to be revisited
+- git fetch : eg add a new branch from a remote but doesn't merge changes! 
+- git remote show origin : see info about the remote
+
 
 Step optional: tags
 - git tag -a v1.4 -m "my version 1.4"
 - git show v1.4
 - git tag -a v1.2 9fceb02: tag a specific commit later in time
+- git tag -a v1.3.2 -m 'hamsters' : create a tag with a message
+- git push --tags origin v1.3.2 : push a tag
+
+
+Step ten : branches
+- git branch -v : lists local branches
+- git branch -r : lists remote branches
+- git push origin :weasel : delete remote branch but not the local one
+- git rebase master: prepares the merge of the branch with the master... we then checkout the master and then we merge
+
+- 
